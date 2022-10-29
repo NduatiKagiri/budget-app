@@ -1,0 +1,19 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="trans-header">
+  <%= link_to categories_path do %>
+    <%= image_tag("back.png", width: 40) %>
+  <% end %>
+  <h1>Transactions</h1>
+  <%= image_tag("menu.png", width: 40) %>
+</div>
+
+<div id="transaktions">
+  <% @transaktions.each do |transaktion| %>
+    <%= render transaktion %>
+  <% end %>
+</div>
+
+<div class="new-trans">
+  <%= link_to "New transaktion", new_category_transaktion_path, class: "new-trans-btn" %>
+</div>

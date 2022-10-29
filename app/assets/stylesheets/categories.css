@@ -1,0 +1,44 @@
+.all-categories {
+  width: 100%;
+}
+
+.all-categories .header {
+  background: #3778c2;
+  height: 80px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.all-categories .header h1 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.categories {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #000;
+}
+
+.categories img {
+  margin-right: 30px;
+  height: 50px;
+  width: 50px;
+}
+
+.categories .cat-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.add-cat {
+  color: #3778c2;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}

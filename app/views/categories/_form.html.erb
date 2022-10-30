@@ -11,17 +11,15 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+  <div class="new-feild">
+    <%= form.text_field :name, placeholder: "Name" %>
   </div>
 
-  <div>
-    <%= form.label :icon, style: "display: block" %>
-    <%= form.text_area :icon %>
+  <div class="new-feild">
+    <%= form.text_area :icon, placeholder: "icon" %>
   </div>
 
-  <div>
+  <div class="new-btn">
     <%= form.submit %>
   </div>
 <% end %>

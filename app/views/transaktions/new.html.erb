@@ -1,9 +1,9 @@
-<h1>New transaktion</h1>
+<div class="trans-header">
+  <%= link_to category_transaktions_path do %>
+    <%= image_tag("back.png", width: 40) %>
+  <% end %>
+  <h1>New Transaction</h1>
+  <%= image_tag("menu.png", width: 40) %>
+</div>
 
 <%= render "form", transaktion: @transaktion %>
-
-<br>
-
-<div>
-  <%= link_to "Back to transaktions", category_transaktions_path %>
-</div>

@@ -1,15 +1,18 @@
 <div class="sign-in">
-  <h2>Log in</h2>
+  <div class="trans-header">
+    <%= image_tag("back.png", width: 40) %>
+    <h1>Log In</h1>
+    <%= image_tag("menu.png", width: 40) %>
+  </div>
 
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="field">
-      <%= f.label :email %><br />
-      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email" %>
     </div>
 
     <div class="field">
       <%= f.label :password %><br />
-      <%= f.password_field :password, autocomplete: "current-password" %>
+      <%= f.password_field :password, autocomplete: "current-password", placeholder: "password" %>
     </div>
 
     <% if devise_mapping.rememberable? %>

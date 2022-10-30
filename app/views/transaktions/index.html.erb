@@ -8,6 +8,11 @@
   <%= image_tag("menu.png", width: 40) %>
 </div>
 
+<div class="transaktion">
+  <p><strong>Total Amount</strong></p>
+  <p>$ <%= @total_amount %></p>
+</div>
+
 <div id="transaktions">
   <% @transaktions.each do |transaktion| %>
     <%= render transaktion %>

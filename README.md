@@ -41,7 +41,7 @@ LinkedIn: https://linkedin.com/in/nduati-kagiri/
 ## :handshake: Contributing
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the issues page.
+Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 Give a :star:️ if you like this project!

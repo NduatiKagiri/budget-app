@@ -4,6 +4,10 @@ class TransaktionsController < ApplicationController
   # GET /transaktions or /transaktions.json
   def index
     @transaktions = Transaktion.includes(:category).where(category_id: params[:category_id]).order(created_at: :desc)
+    @total_amount = 0
+    @transaktions.each do |transaktion|
+      @total_amount = @total_amount + transaktion.amount
+    end
   end
 
   # GET /transaktions/1 or /transaktions/1.json
@@ -26,7 +30,7 @@ class TransaktionsController < ApplicationController
     respond_to do |format|
       if @transaktion.save
         format.html do
-          redirect_to category_transaktion_path(id: @transaktion.id), notice: 'Transaktion was successfully created.'
+          redirect_to category_transaktions_path, notice: 'Transaktion was successfully created.'
         end
         format.json { render :show, status: :created, location: @transaktion }
       else

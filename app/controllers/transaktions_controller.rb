@@ -6,7 +6,7 @@ class TransaktionsController < ApplicationController
     @transaktions = Transaktion.includes(:category).where(category_id: params[:category_id]).order(created_at: :desc)
     @total_amount = 0
     @transaktions.each do |transaktion|
-      @total_amount = @total_amount + transaktion.amount
+      @total_amount += transaktion.amount
     end
   end
 

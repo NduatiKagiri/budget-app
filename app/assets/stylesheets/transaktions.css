@@ -1,0 +1,72 @@
+.trans-header {
+  background: #3778c2;
+  height: 80px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trans-header h1 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.transaktion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #d3d3d3;
+  padding: 20px;
+}
+
+.transaktion p:first-child {
+  font-size: 24px;
+}
+
+.transaktion p:last-child {
+  font-size: 29px;
+  font-weight: bold;
+}
+
+.new-trans,
+.add-cat {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.new-trans-btn,
+.add-cat-btn {
+  color: #3778c2;
+}
+
+.new-feild {
+  width: 100%;
+  margin-bottom: 24px;
+  padding: 10px;
+}
+
+.new-feild input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #d3d3d3;
+  padding: 10px;
+  font-size: 21px;
+}
+
+.new-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-btn input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+}

@@ -1,0 +1,33 @@
+.sign-up {
+  width: 100%;
+  padding: 24px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign-up .field,
+.sign-up .actions {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.sign-up .field input {
+  width: 100%;
+  height: 40px;
+  font-size: 19px;
+  padding: 8px 12px;
+  border: none;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.sign-up .actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up .actions .submit-btn {
+  padding: 10px 12px;
+  font-size: 17px;
+}

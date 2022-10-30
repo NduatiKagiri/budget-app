@@ -1,0 +1,47 @@
+.sign-in {
+  width: 100%;
+  padding: 24px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign-in .field,
+.sign-in .actions {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.sign-in .field label {
+  font-size: 24px;
+}
+
+.sign-in .field input {
+  width: 100%;
+  height: 40px;
+  font-size: 19px;
+  padding: 8px 12px;
+  border: none;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.sign-in .remember_me {
+  display: flex;
+}
+
+.sign-in .remember_me input[type='checkbox'] {
+  height: 24px;
+  width: 24px;
+  margin-right: 12px;
+}
+
+.sign-in .actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-in .actions .submit-btn {
+  padding: 10px 12px;
+  font-size: 17px;
+}

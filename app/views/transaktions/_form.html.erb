@@ -1,0 +1,25 @@
+<%= form_with(model: transaktion, url: category_transaktions_path, method: :post) do |form| %>
+  <% if transaktion.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(transaktion.errors.count, "error") %> prohibited this transaktion from being saved:</h2>
+
+      <ul>
+        <% transaktion.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="new-feild">
+    <%= form.text_field :name, placeholder: "Name" %>
+  </div>
+
+  <div class="new-feild">
+    <%= form.text_field :amount, placeholder: "Amount" %>
+  </div>
+
+  <div class="new-btn">
+    <%= form.submit %>
+  </div>
+<% end %>

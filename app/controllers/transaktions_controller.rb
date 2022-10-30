@@ -3,9 +3,6 @@ class TransaktionsController < ApplicationController
 
   # GET /transaktions or /transaktions.json
   def index
-    # @transaktions = Transaktion.all
-    # @transactions = @category.transaktions.order(created_at: :desc)
-    # category = Category.find(params[:id])
     @transaktions = Transaktion.includes(:category).where(category_id: params[:category_id]).order(created_at: :desc)
   end
 
@@ -29,7 +26,7 @@ class TransaktionsController < ApplicationController
     respond_to do |format|
       if @transaktion.save
         format.html do
-          redirect_to category_transaktion_path(@transaktion), notice: 'Transaktion was successfully created.'
+          redirect_to category_transaktion_path(id: @transaktion.id), notice: 'Transaktion was successfully created.'
         end
         format.json { render :show, status: :created, location: @transaktion }
       else

@@ -10,7 +10,7 @@
 
 ## Online Version Link
 This project is available online through the following link.
-https://budget-app.nduatikagiri.co.ke
+https://sheltered-cove-77932.herokuapp.com/
 
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
